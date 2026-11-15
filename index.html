@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRO MIND | BIO TRACK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+    <header class="header">
+        <div class="logo">✦ ASTRO <span>MIND</span></div>
+        <div class="status"><i></i> MISSION SYSTEM ONLINE</div>
+    </header>
+
+    <!-- WELCOME SCREEN -->
+    <section class="screen active" id="welcomeScreen">
+
+        <div class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">ASTRONAUT COGNITIVE ASSESSMENT</p>
+
+                <h1>Train Your Mind.<br>
+                    <span>Explore Beyond.</span>
+                </h1>
+
+                <p class="description">
+                    Complete three interactive challenges to explore
+                    your memory, attention and spatial awareness.
+                </p>
+
+                <button class="primary-btn" id="launchButton">
+                    LAUNCH MISSION →
+                </button>
+
+                <p class="note">PROTOTYPE • NOT A MEDICAL DIAGNOSTIC TEST</p>
+            </div>
+
+            <div class="planet">
+                <div class="planet-circle">✦</div>
+                <div class="orbit"></div>
+                <div class="orbit orbit-two"></div>
+            </div>
+        </div>
+
+        <div class="modules">
+            <h2>YOUR MISSION / 03 MODULES</h2>
+
+            <div class="module-list">
+
+                <div class="module">
+                    <div class="module-icon purple">▦</div>
+                    <div>
+                        <h3>Number Memory</h3>
+                        <p>Remember numbers and positions.</p>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-icon blue">◉</div>
+                    <div>
+                        <h3>Color Focus</h3>
+                        <p>Identify the target color.</p>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-icon green">⌗</div>
+                    <div>
+                        <h3>Spatial Memory</h3>
+                        <p>Remember the glowing sequence.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- GAME SCREEN -->
+    <section class="screen" id="gameScreen">
+
+        <div class="game-heading">
+            <div>
+                <p class="eyebrow" id="stageLabel">MODULE 01 / 03</p>
+                <h1 id="stageTitle">Number Memory</h1>
+            </div>
+
+            <div class="progress-box">
+                <div class="progress-text">
+                    <span>MISSION PROGRESS</span>
+                    <span id="progressPercent">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div id="progressBar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-card">
+
+            <div class="instruction">
+                <div class="instruction-icon" id="stageIcon">▦</div>
+
+                <div>
+                    <p class="eyebrow" id="stageType">MEMORY RECALL</p>
+                    <h2 id="instructionTitle">Remember the cards</h2>
+                    <p id="instructionText">
+                        Memorize the numbers and their positions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="play-area">
+
+                <div id="countdown"></div>
+
+                <div id="gameContent"></div>
+
+                <p id="feedback"></p>
+
+            </div>
+
+            <div class="game-bottom">
+                <span id="roundLabel">ROUND 1 / 5</span>
+                <span id="gameHint">Focus and take your time.</span>
+            </div>
+
+            <div class="game-actions">
+                <button class="secondary-btn" id="exitButton">
+                    EXIT MISSION
+                </button>
+
+                <button class="primary-btn" id="actionButton">
+                    START ROUND →
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULTS SCREEN -->
+    <section class="screen" id="resultScreen">
+
+        <div class="result-heading">
+            <p class="eyebrow">MISSION DEBRIEF</p>
+            <h1>Mission <span>Complete!</span></h1>
+            <p>Your cognitive activity report is ready.</p>
+        </div>
+
+        <div class="overall-card">
+            <div>
+                <p class="eyebrow">OVERALL ACCURACY</p>
+                <h2 id="overallAccuracy">0%</h2>
+                <p id="overallDescription">Your mission summary</p>
+            </div>
+
+            <div class="score-circle" id="scoreCircle">
+                <span id="circleValue">0%</span>
+            </div>
+        </div>
+
+        <div class="results-grid" id="resultsGrid"></div>
+
+        <div class="result-actions">
+            <button class="primary-btn" id="downloadButton">
+                DOWNLOAD REPORT ↓
+            </button>
+
+            <button class="secondary-btn" id="replayButton">
+                PLAY AGAIN ↻
+            </button>
+        </div>
+
+        <p class="disclaimer">
+            This prototype measures performance on simple interactive tasks.
+            It is not a validated clinical assessment and cannot diagnose
+            fatigue, stress or any medical condition.
+        </p>
+
+    </section>
+
+
+    <footer>
+        ASTRO MIND × BIO TRACK
+        <span>COGNITIVE PERFORMANCE PROTOTYPE</span>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
